@@ -1,7 +1,7 @@
-export default function returnHowManyArguments(...args) {
-	let count = 0;
-	for(let arg of args) {
-		count++;
-	};
-	return count;
+export default function returnHowManyArguments (...args) {
+  const arr = [];
+  for (const arg of args) {
+    arr.push(arg);
+  }
+  return arr.length;
 }
