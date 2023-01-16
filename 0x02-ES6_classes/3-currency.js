@@ -10,6 +10,7 @@ export default class Currency {
     if (typeof cd !== 'string') throw TypeError('code must be a string');
     this._code = cd;
   }
+
   get code() {
     return this._code;
   }
@@ -18,11 +19,12 @@ export default class Currency {
     if (typeof nm !== 'string') throw TypeError('name must be a string');
     this._name = nm;
   }
+
   get name() {
     return this._name;
   }
 
   displayFullCurrency() {
-    return `${this._name} (${this._code})`
+    return `${this._name} (${this._code})`;
   }
 }

@@ -8,6 +8,7 @@ export default class Pricing {
     if (typeof am !== 'string') throw TypeError('amount must be a string');
     this._amount = am;
   }
+
   get amount() {
     return this._amount;
   }
@@ -16,6 +17,7 @@ export default class Pricing {
     if (typeof curr !== 'object') throw TypeError('currency must be an object');
     this._currency = curr;
   }
+
   get currency() {
     return this._currency;
   }
